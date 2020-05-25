@@ -23,6 +23,6 @@ try:
     if cur['slug'] == 'bitcoin':
       price = cur['quote']['USD']['price']
       print('CURRENT BTC PRICE: ')
-      print('$ ' + str(round(price,2)))
+      print('USD $' + str(round(price,2)))
 except (ConnectionError, Timeout, TooManyRedirects) as e:
   print(e)
